@@ -1,0 +1,424 @@
+# https://thuvienphapluat.vn/van-ban/dich-vu-phap-ly/thong-tu-07-2014-tt-bvhttdl-ho-so-mau-van-ban-thuc-hien-giam-dinh-tu-phap-243160.aspx
+
+BỘ VĂN HÓA, THỂ THAO VÀ DU LỊCH --------
+
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc ----------------
+
+Số: 07/2014/TT-BVHTTDL
+
+Hà Nội, ngày 23 tháng 7 năm 2014
+
+BỘ VĂN HÓA, THỂ THAO VÀ DU LỊCH --------
+
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc ----------------
+
+Số: 07/2014/TT-BVHTTDL
+
+Hà Nội, ngày 23 tháng 7 năm 2014
+
+QUY ĐỊNH HỒ SƠ, CÁC MẪU VĂN BẢN THỰC HIỆN GIÁM ĐỊNH TƯ PHÁP; ÁP DỤNG QUY CHUẨN CHUYÊN MÔN CHO HOẠT ĐỘNG GIÁM ĐỊNH TƯ PHÁP TRONG LĨNH VỰC VĂN HÓA; ĐIỀU KIỆN VỀ CƠ SỞ VẬT CHẤT, TRANG THIẾT BỊ, PHƯƠNG TIỆN GIÁM ĐỊNH CỦA VĂN PHÒNG GIÁM ĐỊNH TƯ PHÁP VỀ DI VẬT, CỔ VẬT, QUYỀN TÁC GIẢ, QUYỀN LIÊN QUAN
+
+Căn cứ Luật giám định tư pháp ngày 20 tháng 6 năm 2012;
+
+Căn cứ Nghị định số 85/2013/NĐ-CP ngày 29 tháng 7 năm 2013 của Chính phủ quy định chi tiết và biện pháp thi hành Luật giám định tư pháp;
+
+Căn cứ Nghị định số 76/2013/NĐ-CP ngày 16 tháng 7 năm 2013 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bộ Văn hóa, Thể thao và Du lịch;
+
+Theo đề nghị của Vụ trưởng Vụ Pháp chế,
+
+Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch ban hành Thông tư quy định hồ sơ, các mẫu văn bản thực hiện giám định tư pháp; áp dụng quy chuẩn chuyên môn cho hoạt động giám định tư pháp trong lĩnh vực văn hóa; điều kiện về cơ sở vật chất, trang thiết bị, phương tiện giám định của văn phòng giám định tư pháp về di vật, cổ vật, quyền tác giả, quyền liên quan.
+
+
+## Điều 1. Phạm vi điều chỉnh
+
+Thông tư này quy định về hồ sơ, các mẫu văn bản thực hiện giám định tư pháp; áp dụng quy chuẩn chuyên môn cho hoạt động giám định tư pháp trong lĩnh vực văn hóa; điều kiện về cơ sở vật chất, trang thiết bị, phương tiện giám định của văn phòng giám định tư pháp về di vật, cổ vật, quyền tác giả, quyền liên quan.
+
+
+## Điều 2. Đối tượng áp dụng
+
+Thông tư này áp dụng đối với giám định viên tư pháp, người giám định tư pháp theo vụ việc, văn phòng giám định tư pháp, tổ chức giám định tư pháp theo vụ việc trong lĩnh vực văn hóa; cá nhân, tổ chức khác có liên quan trong việc tiếp nhận và thực hiện trưng cầu, yêu cầu giám định.
+
+
+## Điều 3. Giao, nhận hồ sơ, đối tượng trưng cầu, yêu cầu giám định tư pháp
+
+- 1. Việc giao, nhận hồ sơ, đối tượng trưng cầu, yêu cầu giám định tư pháp trực tiếp hoặc qua đường bưu chính được thực hiện theo quy định tại Điều 27 Luật giám định tư pháp.
+- 2. Việc giao, nhận trực tiếp hồ sơ, đối tượng trưng cầu, yêu cầu giám định tư pháp phải được lập thành biên bản. Chỉ nhận trưng cầu, yêu cầu giám định tư pháp đúng đối tượng và không thuộc diện phải từ chối theo quy định của pháp luật.
+
+## Điều 4. Mẫu văn bản thực hiện giám định tư pháp trong lĩnh vực văn hóa
+
+- 1. Quá trình thực hiện giám định tư pháp theo trưng cầu, yêu cầu trong lĩnh vực văn hóa phải đảm bảo tuân thủ nguyên tắc quy định tại Điều 3 của Luật giám định tư pháp và được lập thành văn bản ghi nhận kịp thời, đầy đủ, trung thực toàn bộ quá trình và kết quả thực hiện giám định theo các mẫu văn bản quy định tại khoản 2 Điều này.
+- 2. Ban hành kèm theo Thông tư này các mẫu văn bản sau:
+  - a) Mẫu biên bản giao, nhận hồ sơ, đối tượng trưng cầu, yêu cầu giám định (Mẫu số 01);
+  - b) Mẫu biên bản mở niêm phong (Mẫu số 02);
+  - c) Mẫu văn bản ghi nhận quá trình thực hiện giám định (Mẫu số 03);
+  - d) Mẫu kết luận giám định (Mẫu số 04a và 04b);
+  - đ) Mẫu biên bản bàn giao kết luận giám định (Mẫu số 05).
+
+## Điều 5. Áp dụng quy chuẩn chuyên môn cho hoạt động giám định tư pháp
+
+- 1. Giám định tư pháp về cổ vật được thực hiện theo các quy định tại Chương III của Thông tư số 22/2011/TT-BVHTTDL ngày 30 tháng 12 năm 2011 của Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch quy định về điều kiện thành lập và hoạt động của cơ sở giám định cổ vật.
+- 2. Giám định tư pháp về quyền tác giả, quyền liên quan được thực hiện theo các quy định tại Chương VI của Nghị định số 105/2006/NĐ-CP  ngày 22 tháng 9 năm 2006 của Chính phủ quy định chi tiết và hướng dẫn thi hành một số điều của Luật Sở hữu trí tuệ và quản lý nhà nước về sở hữu trí tuệ; Điều 1 của Nghị định số 119/2010/NĐ-CP  ngày 30 tháng 12 năm 2010 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 105/2006/NĐ-CP ; Chương IV của Thông tư số 15/2012/TT-BVHTTDL  ngày 13/12/2012 của Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch hướng dẫn hoạt động giám định quyền tác giả, quyền liên quan.
+- 3. Giám định tư pháp về các chuyên ngành khác được thực hiện căn cứ vào các văn bản quy phạm pháp luật quy định về chuyên ngành cần giám định.
+- 4. Việc giám định tư pháp trong lĩnh vực văn hóa phải căn cứ vào các văn bản quy phạm pháp luật có hiệu lực thi hành tại thời điểm xảy ra vụ việc.
+
+## Điều 6. Điều kiện về cơ sở vật chất, trang thiết bị, phương tiện giám định của văn phòng giám định tư pháp về di vật, cổ vật, quyền tác giả, quyền liên quan
+
+- 1. Văn phòng giám định tư pháp về di vật, cổ vật, quyền tác giả, quyền liên quan phải có đủ các điều kiện về cơ sở vật chất, trang thiết bị, phương tiện giám định sau đây:
+  - a) Có trụ sở thuộc quyền sở hữu hoặc quyền sử dụng;
+  - b) Có phòng làm việc cho giám định viên và nhân viên; có tủ hoặc kho hoặc khu vực riêng lưu trữ hồ sơ giám định;
+có trang thiết bị bảo quản đối tượng giám định;
+
+  - c) Có nguồn tài liệu về cổ vật để tham khảo, phục vụ hoạt động giám định (đối với văn phòng giám định tư pháp về di vật, cổ vật) hoặc có nguồn cơ sở dữ liệu thông tin về quyền tác giả, quyền liên quan để thực hiện hoạt động giám định (đối với văn phòng giám định tư pháp về quyền tác giả, quyền liên quan);
+  - d) Có trang thiết bị, phương tiện khác đáp ứng yêu cầu của hoạt động giám định.
+- 2. Giám đốc Sở Văn hóa, Thể thao và Du lịch có trách nhiệm phối hợp với Giám đốc Sở Tư pháp tham mưu giúp Chủ tịch Ủy ban nhân dân tỉnh, thành phố trực thuộc Trung ương quyết định cho phép thành lập và cấp giấy đăng ký hoạt động của văn phòng giám định tư pháp về di vật, cổ vật, quyền tác giả, quyền liên quan.
+
+## Điều 7. Tổ chức thực hiện
+
+- 1. Vụ Pháp chế chủ trì hướng dẫn, kiểm tra việc thực hiện Thông tư này.
+- 2. Thủ trưởng các cơ quan, đơn vị trực thuộc Bộ, Giám đốc Sở Văn hóa, Thể thao và Du lịch các tỉnh, thành phố trực thuộc Trung ương có trách nhiệm tổ chức thực hiện Thông tư này.
+
+## Điều 8. Hiệu lực thi hành
+
+- 1. Thông tư này có hiệu lực thi hành kể từ ngày 10 tháng 9 năm 2014.
+- 2. Trong quá trình thực hiện, nếu có vướng mắc, đề nghị các tổ chức, cá nhân phản ánh về Bộ Văn hóa, Thể thao và Du lịch (qua Vụ Pháp chế) để sửa đổi, bổ sung cho phù hợp.
+  - Thủ tướng Chính phủ (để báo cáo);
+  - Các Phó Thủ tướng Chính phủ (để báo cáo);
+  - Văn phòng Trung ương Đảng;
+  - Văn phòng Quốc hội;
+  - Văn phòng Chủ tịch nước;
+  - Văn phòng Chính phủ;
+  - Tòa án nhân dân tối cao;
+  - Viện kiểm sát nhân dân tối cao;
+  - Các Bộ, cơ quan ngang Bộ, cơ quan thuộc Chính phủ;
+  - HĐND, UBND các tỉnh, thành phố trực thuộc Trung ương;
+  - Cơ quan Trung ương của các đoàn thể;
+  - Cục kiểm tra văn bản QPPL-Bộ Tư pháp;
+  - Công báo; Website Chính phủ;
+  - Bộ trưởng, các Thứ trưởng Bộ VHTTDL;
+  - Các Tổng cục, Cục, Vụ, đơn vị trực thuộc Bộ VHTTDL;
+  - Cổng thông tin điện tử Bộ VHTTDL;
+  - Sở VHTTDL các tỉnh, thành phố trực thuộc Trung ương;
+  - Lưu: VT, Vụ PC. NTT(300).
+Hoàng Tuấn Anh
+
+(Ban hành kèm theo Thông tư số: 07/2014/TT-BVHTTDL ngày 23 tháng 7 năm 2014 của Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch)
+
+(1) ……………………… --------
+
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc ----------------
+
+GIAO NHẬN HỒ SƠ, ĐỐI TƯỢNG TRƯNG CẦU, YÊU CẦU GIÁM ĐỊNH
+
+Hôm nay, hồi……giờ.... ngày .... tháng .... năm.... tại: ………………………… (2)
+
+Chúng tôi gồm:
+
+1- Đại diện người trưng cầu/yêu cầu giám định:
+
++ Ông (bà) ……………………………………………………chức vụ…………………
+
+2- Đại diện…………………………………………………………………………… (3):
+
++ Ông (bà) ……………………………………………………chức vụ ………………
+
+3- Người chứng kiến (nếu có):
+
+Ông (bà) ………………………………………………………………………………(4)
+
+Tiến hành giao nhận tài liệu hồ sơ, đối tượng trưng cầu/ yêu cầu giám định theo yêu cầu tại Quyết định trưng cầu, yêu cầu giám định số.... (5) như sau:
+
+………………………………………………………………………………………………
+
+(Chú ý: Ghi rõ tên, loại, số, ký hiệu, ngày, tháng, năm, trích yếu nội dung thông tin và tình trạng của tài liệu, đối tượng giám định giao nhận; cách thức bảo quản tài liệu, đối tượng giám định khi giao nhận).
+
+Biên bản giao, nhận tài liệu hồ sơ, đối tượng trưng cầu/yêu cầu giám định đã được đọc lại cho những người có tên nêu trên nghe và đại diện ký xác nhận; biên bản được lập thành 02 bản, mỗi bên giữ 01 bản.
+
+Việc giao nhận hoàn thành hồi....… giờ…………ngày……/……/……
+
+ĐẠI DIỆN CƠ QUAN TRƯNG CẦU/YÊU CẦU
+
+(Ký, ghi rõ họ tên)
+
+NGƯỜI CHỨNG KIẾN
+
+(Ký, ghi rõ họ tên)
+
+……………………(3)
+
+(Ký, ghi rõ họ tên)
+
+(1) Tên cơ quan/Giám định viên tiếp nhận trưng cầu.
+
+(2) Địa điểm giao nhận thông tin, tài liệu.
+
+(3) Tên cơ quan, đơn vị hoặc giám định viên tiếp nhận trưng cầu.
+
+(4) Ghi rõ họ tên, chức vụ, địa chỉ người chứng kiến.
+
+(5) Số văn bản trưng cầu (hoặc yêu cầu) giám định.
+
+(Ban hành kèm theo Thông tư số: 07/2014/TT-BVHTTDL ngày 23 tháng 7 năm 2014 của Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch)
+
+(1) ……………………… --------
+
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc ----------------
+
+MỞ NIÊM PHONG
+
+Hôm nay, hồi……giờ.... ngày .... tháng .... năm.... tại: …………………………… (2)
+
+Chúng tôi gồm:
+
+1- Đại diện người trưng cầu/yêu cầu giám định:
+
++ Ông (bà) ……………………………………………………chức vụ……………………
+
+2- Đại diện……………………………………………………………………………… (3):
+
++ Ông (bà) ……………………………………………………chức vụ …………………
+
+3- Người chứng kiến:
+
+Ông (bà) …………………………………………………………………………………(4)
+
+Tiến hành thủ tục mở niêm phong tài liệu hồ sơ, đối tượng trưng cầu/yêu cầu giám định theo yêu cầu tại Quyết định trưng cầu, yêu cầu giám định số.... (5) ghi nhận như sau:
+
+…………………………………………………………………………………………………
+
+(Chú ý: Ghi nhận rõ tên, loại, số, ký hiệu, ngày, tháng, năm, trích yếu nội dung và tình trạng tài liệu, đối tượng giám định khi tiến hành mở niêm phong; cách thức bảo quản tài liệu, đối tượng giám định khi mở niêm phong).
+
+Biên bản mở niêm phong đã được đọc lại cho những người có tên nêu trên nghe và đại diện ký xác nhận; biên bản được lập thành 02 bản, mỗi bên giữ 01 bản.
+
+Việc mở niêm phong hoàn thành hồi .... giờ .... ngày……/……/……
+
+ĐẠI DIỆN CƠ QUAN TRƯNG CẦU/YÊU CẦU
+
+(Ký, ghi rõ họ tên)
+
+NGƯỜI CHỨNG KIẾN
+
+(Ký, ghi rõ họ tên)
+
+……………………(3)
+
+(Ký, ghi rõ họ tên)
+
+(1) Tên cơ quan/Giám định viên tiếp nhận trưng cầu.
+
+(2) Địa điểm tiến hành mở niêm phong.
+
+(3) Tên cơ quan, đơn vị hoặc cá nhân yêu cầu.
+
+(4) Ghi rõ họ tên, chức vụ, địa chỉ người chứng kiến.
+
+(5) Số văn bản trưng cầu (hoặc yêu cầu) giám định.
+
+(Ban hành kèm theo Thông tư số: 07/2014/TT-BVHTTDL ngày 23 tháng 7 năm 2014 của Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch)
+
+(1) ……………………… (2) ……………………… --------
+
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc ----------------
+
+VĂN BẢN GHI NHẬN QUÁ TRÌNH THỰC HIỆN GIÁM ĐỊNH
+
+Tôi/Chúng tôi gồm: (1) ……………………………………………………………………
+
+Thực hiện Quyết định số ....(3) về việc tiếp nhận trưng cầu và cử người tham gia giám định tư pháp theo hình thức ... (giám định tập thể/giám định cá nhân) đối với trưng cầu giám định ....(4), giám định viên/các thành viên giám định tập thể đã tiến hành giám định các nội dung yêu cầu được ghi nhận quá trình như sau:
+
+NỘI DUNG: (5)
+
+Văn bản ghi nhận quá trình thực hiện giám định đã được cá nhân giám định viên (trường hợp giám định theo hình thức cá nhân)/tập thể các thành viên giám định (đối với trường hợp giám định theo hình thức tập thể) thảo luận, thông qua, đồng ký tên và lưu hồ sơ giám định (6)./.
+
+(7)..., ngày .... tháng .... năm...
+
+CHỮ KÝ GIÁM ĐỊNH VIÊN/CÁC THÀNH VIÊN GIÁM ĐỊNH TẬP THỂ
+
+(Ký, ghi rõ họ, tên)
+
+(1) Tên cơ quan/ Giám định viên tiếp nhận trưng cầu.
+
+(2) Giám định cá nhân/giám định tập thể.
+
+(3) Tên, loại, số, ký hiệu, ngày, tháng, năm và trích yếu nội dung tiếp nhận trưng cầu và cử người tham gia giám định tư pháp hình thức cá nhân hoặc tập thể.
+
+(4) Tên, loại, số, ký hiệu, ngày, tháng, năm và trích yếu nội dung văn bản trưng cầu giám định.
+
+(5) Ghi đầy đủ, chi tiết diễn biến quá trình giám định theo từng ngày; nhiệm vụ của mỗi giám định viên tư pháp, người giám định theo vụ việc trong thực hiện giám định các nội dung theo yêu cầu giám định; Phương pháp thực hiện giám định; Kết luận và các ý kiến giống, khác nhau về đối tượng giám định; Thời gian, địa điểm diễn ra việc giám định theo từng ngày cụ thể; Ngày kết thúc giám định; Địa điểm hoàn thành kết luận giám định và các vấn đề có liên quan khác cần ghi nhận.
+
+(6) Văn bản ghi nhận quá trình giám định phải được thực hiện hàng ngày trong suốt quá trình giám định. Các thành viên tham gia giám định ngày nào thì trực tiếp ghi ý kiến của mình và ký xác nhận vào văn bản ghi nhận quá trình giám định của ngày đó.
+
+(7) Địa điểm hành chính nơi diễn ra quá trình giám định.
+
+Mẫu số 04a
+
+(Ban hành kèm theo Thông tư số: 07/2014/TT-BVHTTDL ngày 23 tháng 7 năm 2014 của Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch)
+
+(1) ………………………
+
+GIÁM ĐỊNH CÁ NHÂN --------
+
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc ----------------
+
+KẾT LUẬN GIÁM ĐỊNH
+
+CÁC NỘI DUNG THEO TRƯNG CẦU GIÁM ĐỊNH ... (2)
+
+Căn cứ Quyết định số ....(3) về việc tiếp nhận trưng cầu và Quyết định cử người tham gia giám định tư pháp theo hình thức giám định cá nhân đối với trưng cầu giám định ....(2), giám định viên đã tiến hành giám định các nội dung yêu cầu và kết luận giám định như sau:
+
+- 1. Người giám định tư pháp:
+(ghi rõ họ tên giám định viên hoặc người giám định theo vụ việc)
+
+- 2. Người trưng cầu giám định/người yêu cầu giám định:
+  - a) Cơ quan tiến hành tố tụng:
+  - b) Người tiến hành tố tụng:
+  - c) Văn bản trưng cầu giám định số:
+  - d) Người yêu cầu giám định:
+- 3. Thông tin xác định đối tượng giám định:
+- 4. Thời gian tiếp nhận văn bản trưng cầu, yêu cầu giám định:
+- 5. Nội dung yêu cầu giám định:
+- 6. Phương pháp thực hiện giám định:
+- 7. Kết luận về đối tượng giám định:
+- 8. Thời gian, địa điểm thực hiện, hoàn thành việc giám định:
+Kết luận giám định hoàn thành ngày: ...
+
+Địa điểm hoàn thành kết luận giám định cá nhân:
+
+Kết luận giám định này gồm....trang, được làm thành ... bản có giá trị như nhau và được gửi cho:
+
+  - Cơ quan trưng cầu giám định: 02 (hai) bản;
+  - Lưu hồ sơ giám định: 02 (hai) bản.
+Bản kết luận giám định này đã được giám định viên ký tên và chịu trách nhiệm trước pháp luật./.
+
+CHỮ KÝ GIÁM ĐỊNH VIÊN/NGƯỜI GIÁM ĐỊNH THEO VỤ VIỆC
+
+(Chữ ký và ghi rõ họ tên)
+
+XÁC NHẬN CỦA ...(1)
+
+… xác nhận những chữ ký nói trên là chữ ký của giám định viên…………được cử giám định cá nhân theo Quyết định số……… (3).
+
+(4) ………, ngày tháng     năm (Ký tên, đóng dấu)(5)
+
+(1) Tên cơ quan tiếp nhận trưng cầu.
+
+(2) Số văn bản trưng cầu (hoặc yêu cầu) giám định.
+
+(3) Số Quyết định về việc tiếp nhận trưng cầu và cử người tham gia giám định tư pháp theo hình thức giám định cá nhân.
+
+(4) Địa điểm hành chính nơi diễn ra việc thực hiện giám định.
+
+(5) Lãnh đạo cơ quan tiếp nhận trưng cầu hoặc cơ quan chứng thực chữ ký.
+
+Mẫu số 04b
+
+(Ban hành kèm theo Thông tư số: 07/2014/TT-BVHTTDL ngày 23 tháng 7 năm 2014 của Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch)
+
+(1) ………………………
+
+GIÁM ĐỊNH TẬP THỂ (hoặc HỘI ĐỒNG THẨM ĐỊNH) --------
+
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc ----------------
+
+KẾT LUẬN GIÁM ĐỊNH
+
+CÁC NỘI DUNG THEO TRƯNG CẦU/YÊU CẦU GIÁM ĐỊNH ... (2)
+
+Căn cứ Quyết định số ....(3) về việc tiếp nhận trưng cầu và Quyết định cử người tham gia giám định tư pháp theo hình thức giám định tập thể (hoặc Hội đồng giám định) đối với trưng cầu giám định ....(2), các thành viên giám định tập thể (hoặc Hội đồng giám định) đã tiến hành giám định các nội dung yêu cầu và kết luận giám định như sau:
+
+- 1. Người giám định tư pháp:
+(Ghi rõ họ tên giám định viên hoặc người giám định theo vụ việc)
+
+- 2. Người trưng cầu giám định/người yêu cầu giám định:
+  - a) Cơ quan tiến hành tố tụng:
+  - b) Người tiến hành tố tụng:
+  - c) Văn bản trưng cầu giám định số:
+  - d) Người yêu cầu giám định:
+- 3. Thông tin xác định đối tượng giám định:
+- 4. Thời gian tiếp nhận văn bản trưng cầu, yêu cầu giám định:
+- 5. Nội dung yêu cầu giám định:
+- 6. Phương pháp thực hiện giám định:
+- 7. Kết luận về đối tượng giám định:
+- 8. Thời gian, địa điểm thực hiện, hoàn thành việc giám định:
+Kết luận giám định hoàn thành ngày: ...
+
+Địa điểm hoàn thành kết luận giám định cá nhân:
+
+Kết luận giám định này gồm....trang, được làm thành ... bản có giá trị như nhau và được gửi cho:
+
+  - Cơ quan trưng cầu giám định: 02 (hai) bản;
+  - Lưu hồ sơ giám định: 02 (hai) bản.
+Bản kết luận giám định này đã được tập thể các thành viên giám định thảo luận, thông qua, đồng ký tên và chịu trách nhiệm như nhau trước pháp luật./.
+
+CHỮ KÝ CÁC THÀNH VIÊN GIÁM ĐỊNH TẬP THỂ (hoặc Hội đồng giám định)
+
+(Ký và ghi rõ họ, tên)
+
+XÁC NHẬN CỦA……… (1)
+
+.... xác nhận những chữ ký nói trên là chữ ký của các thành viên được cử tham gia giám định tập thể (hoặc Hội đồng giám định) theo Quyết định số .... (3)
+
+(4) ……, ngày tháng    năm (Ký tên, đóng dấu)(5)
+
+(1) Tên cơ quan tiếp nhận trưng cầu.
+
+(2) Số văn bản trưng cầu (hoặc yêu cầu) giám định.
+
+(3) Số Quyết định về việc tiếp nhận trưng cầu và cử người tham gia giám định tư pháp theo hình thức giám định tập thể (hoặc Hội đồng giám định).
+
+(4) Địa điểm hành chính nơi diễn ra việc thực hiện giám định.
+
+(5) Lãnh đạo cơ quan tiếp nhận trưng cầu hoặc cơ quan chứng thực chữ ký.
+
+(Ban hành kèm theo Thông tư số: 07/2014/TT-BVHTTDL ngày 23 tháng 7 năm 2014 của Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch)
+
+(1) ……………………… --------
+
+CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc ----------------
+
+BÀN GIAO KẾT LUẬN GIÁM ĐỊNH TƯ PHÁP
+
+  - Căn cứ Luật Giám định tư pháp năm 2012 và các văn bản pháp lý liên quan;
+  - Căn cứ Quyết định trưng cầu/yêu cầu giám định số ……;
+  - ….
+Hôm nay, hồi……giờ.... ngày .... tháng .... năm....tại: …………………………… (2)
+
+Chúng tôi gồm:
+
+1- Đại diện người trưng cầu/yêu cầu giám định:
+
++ Ông (bà) ……………………………………………………chức vụ…………………
+
+2- Đại diện…………………………………………………………………………… (3):
+
++ Ông (bà) ……………………………………………………chức vụ ………………
+
+3- Người chứng kiến:
+
+Ông (bà) ………………………………………………………………………………(4)
+
+Tiến hành bàn giao kết luận giám định vụ việc và tài liệu phục vụ giám định theo Quyết định trưng cầu/yêu cầu giám định gồm:
+
+  - 02 Bản Kết luận giám định (giá trị pháp lý như nhau), mỗi bản ....trang, có đầy đủ chữ ký các thành viên tham gia giám định tư pháp theo hình thức ... (giám định cá nhân hoặc giám định tập thể), có xác nhận đóng dấu của ....
+  - Tài liệu, đối tượng kèm theo Quyết định trưng cầu/yêu cầu giám định... (5)
+Việc bàn giao kết luận giám định và tài liệu phục vụ giám định kết thúc hồi …giờ... cùng ngày; biên bản được lập thành 02 bản, có giá trị pháp lý như nhau, đã đọc lại cho hai bên giao nhận cùng nghe và thống nhất ký tên xác nhận, mỗi bên giữ 01 bản.
+
+ĐẠI DIỆN CƠ QUAN TRƯNG CẦU
+
+(Ký, ghi rõ họ tên)
+
+ĐẠI DIỆN…………… (3)
+
+(Ký, ghi rõ họ tên)
+
+(1) Tên cơ quan/ Giám định viên tiếp nhận trưng cầu.
+
+(2) Địa điểm giao nhận thông tin, tài liệu.
+
+(3) Tên cơ quan, đơn vị hoặc giám định viên tiếp nhận trưng cầu.
+
+(4) Ghi rõ họ tên, chức vụ, địa chỉ người chứng kiến.
+
+(5) Tên, loại, số, ký hiệu, ngày, tháng, năm và trích yếu nội dung thông tin, tài liệu.
+
+
+---

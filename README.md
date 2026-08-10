@@ -1,0 +1,3 @@
+```commandline
+python main.py
+```
