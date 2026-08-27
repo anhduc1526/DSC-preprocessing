@@ -5,7 +5,7 @@ from md_to_json import build_segments_json
 from preprocess import process_json
 
 if __name__ == "__main__":
-    Path("/mnt/mmlab2024nas/trantran/processed-contexts").mkdir(parents=True, exist_ok=True)
+    Path("/mnt/mmlab2024nas/trantran/processed-contexts-2").mkdir(parents=True, exist_ok=True)
 
     for file_name in glob("/mnt/mmlab2024nas/trantran/selected-contexts/*"):
         input_file = Path(file_name)
@@ -14,11 +14,11 @@ if __name__ == "__main__":
 
         process_json(
             file_name,
-            "/mnt/mmlab2024nas/trantran/processed-contexts/processed.md",
+            "/mnt/mmlab2024nas/trantran/processed-contexts-2/processed.md",
         )
 
         build_segments_json(
             file_name,
-            "/mnt/mmlab2024nas/trantran/processed-contexts/processed.md",
-            f"/mnt/mmlab2024nas/trantran/processed-contexts/{input_file.name}",
+            "/mnt/mmlab2024nas/trantran/processed-contexts-2/processed.md",
+            f"/mnt/mmlab2024nas/trantran/processed-contexts-2/{input_file.name}",
         )

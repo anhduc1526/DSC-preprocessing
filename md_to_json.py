@@ -74,8 +74,7 @@ def parse_md_tree(block_text: str) -> Optional[Node]:
     return root.children[0] if root.children else None
 
 
-def collect_segments(node: Node, path_stack: list[str], out: list[str]) -> None:
-    # path bao gồm cả title của node hiện tại
+def collect_segments(node: Node, path_stack: list[str], out: list[dict]) -> None:
     current_path = path_stack + [_strip_urls(node.title)]
 
     content = "\n".join(node.content_lines).strip()
@@ -84,18 +83,42 @@ def collect_segments(node: Node, path_stack: list[str], out: list[str]) -> None:
 
     if content:
         path_str = " > ".join(p for p in current_path if p)
-        out.append(f"{path_str} | {content}")
+        out.append({
+            "path": path_str,
+            "content": content,
+            "segment_type": "structured",
+        })
 
     for child in node.children:
         collect_segments(child, current_path, out)
 
 
-def md_to_segments(block_text: str) -> list[str]:
+def md_to_segments(block_text: str) -> list[dict]:
     root_node = parse_md_tree(block_text)
     if root_node is None:
         return []
-    out: list[str] = []
-    collect_segments(root_node, [], out)
+
+    out: list[dict] = []
+
+    # Nội dung nằm trước heading đầu tiên (nếu có)
+    root_content = "\n".join(root_node.content_lines).strip()
+    root_content = _strip_urls(root_content)
+    root_content = _normalize_whitespace(root_content)
+
+    if root_content:
+        segment_type = "structured" if root_node.children else "unstructured_whole"
+        # nếu có children -> đây chỉ là đoạn mở đầu (preamble)
+        if root_node.children:
+            segment_type = "root_preamble"
+        out.append({
+            "path": "",
+            "content": root_content,
+            "segment_type": segment_type,
+        })
+
+    for child in root_node.children:
+        collect_segments(child, [], out)
+
     return out
 
 
@@ -123,7 +146,7 @@ def build_segments_json(json_pattern: str, md_path: str, output_path: str) -> No
     new_records = []
     for rec, block in zip(records, blocks):
         new_rec = {k: v for k, v in rec.items() if k != "passage"}
-        new_rec["passage_segments"] = md_to_segments(block)
+        new_rec["passage_segments"] = md_to_segments(block)   # giờ là list[dict]
         new_records.append(new_rec)
 
     json.dump(new_records, open(output_path, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
