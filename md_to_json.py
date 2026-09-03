@@ -180,6 +180,23 @@ _AGENCY_SUBSTR_FIX = [
 ]
 
 
+def _is_agency_code_token(t: str) -> bool:
+    """Token được coi là 'mã cơ quan/đơn vị' (kiểu QD, VKSTC, TTg, T1, K2...)
+    nếu có ít nhất 1 chữ hoa, và tổng (số chữ hoa + số chữ số) >= 2.
+
+    - "QD", "VKSTC", "TANDTC" -> toàn chữ hoa, >=2 chữ hoa -> True
+    - "TTg" -> 2 chữ hoa (dù có 1 chữ thường "g" theo quy ước viết tắt
+      "Thủ tướng Chính phủ") -> True
+    - "T1" -> 1 chữ hoa + 1 chữ số = tổng 2 -> True (trước đây bị loại oan
+      vì chỉ đếm chữ hoa, không tính chữ số)
+    - "Quy", "che", "Vien" -> chỉ 1 chữ hoa (chữ cái đầu), không có chữ số
+      -> False, vẫn được coi là từ tiếng Việt thường, không phải mã cơ quan
+    """
+    upper_count = sum(1 for c in t if c.isupper())
+    digit_count = sum(1 for c in t if c.isdigit())
+    return upper_count >= 1 and (upper_count + digit_count) >= 2
+
+
 def _fix_agency_token(tok: str) -> str:
     up = tok.upper()
     if up in _AGENCY_FIX:
@@ -279,15 +296,60 @@ def label_from_name(name: str) -> str:
             number = "-".join(run)
 
         agency = None
+        codex_ref = None
         if j < len(rest_tokens):
             cand = rest_tokens[j]
-            if sum(1 for c in cand if c.isupper()) >= 2:
+            # Trường hợp đặc biệt: TCVN tương đương/dựa trên tiêu chuẩn quốc tế
+            # CODEX STAN, vd "TCVN-10746-2015-CODEX-STAN-214-1999-..."
+            #   -> "... (CODEX STAN 214-1999)"
+            if (
+                cand.upper() == "CODEX"
+                and j + 1 < len(rest_tokens)
+                and rest_tokens[j + 1].upper() == "STAN"
+            ):
+                codex_num_tokens = []
+                k = j + 2
+                while k < len(rest_tokens) and rest_tokens[k].isdigit():
+                    codex_num_tokens.append(rest_tokens[k])
+                    k += 1
+                if len(codex_num_tokens) >= 2 and len(codex_num_tokens[-1]) == 4:
+                    codex_year = codex_num_tokens[-1]
+                    codex_number = "-".join(codex_num_tokens[:-1])
+                    codex_ref = f"CODEX STAN {codex_number}-{codex_year}"
+                elif codex_num_tokens:
+                    codex_ref = f"CODEX STAN {'-'.join(codex_num_tokens)}"
+                else:
+                    codex_ref = "CODEX STAN"
+            # Trường hợp TCVN tương đương/dựa trên tiêu chuẩn ASEAN STAN, vd
+            # "TCVN-11508-2016-ASEAN-STAN-28-2012-..." -> "(ASEAN STAN 28/2012)"
+            # (tương tự CODEX STAN, chỉ khác dấu nối số hiệu/năm dùng "/" thay vì "-").
+            elif (
+                cand.upper() == "ASEAN"
+                and j + 1 < len(rest_tokens)
+                and rest_tokens[j + 1].upper() == "STAN"
+            ):
+                asean_num_tokens = []
+                k = j + 2
+                while k < len(rest_tokens) and rest_tokens[k].isdigit():
+                    asean_num_tokens.append(rest_tokens[k])
+                    k += 1
+                if len(asean_num_tokens) >= 2 and len(asean_num_tokens[-1]) == 4:
+                    asean_year = asean_num_tokens[-1]
+                    asean_number = "-".join(asean_num_tokens[:-1])
+                    codex_ref = f"ASEAN STAN {asean_number}-{asean_year}"
+                elif asean_num_tokens:
+                    codex_ref = f"ASEAN STAN {'-'.join(asean_num_tokens)}"
+                else:
+                    codex_ref = "ASEAN STAN"
+            elif _is_agency_code_token(cand):
                 agency = _fix_agency_token(cand)
 
         result = f"{prefix} {code} {number}"
         if year:
             result += f":{year}"
-        if agency:
+        if codex_ref:
+            result += f" ({codex_ref})"
+        elif agency:
             result += f"/{agency}"
         return result
 
@@ -348,6 +410,35 @@ def _parse_number_year_agency(matched_type: str, matched_key_tokens, rest: list)
     if rest and rest[0].lower() == "so":
         rest = rest[1:]
 
+    # --- Riêng "Luật"/"Bộ luật": KHÔNG lấy số hiệu văn bản (vd "08/2017/QH14"),
+    # mà lấy TÊN LUẬT bằng chữ đứng sau, vd:
+    # "Luat-08-2017-QH14-Thuy-loi-2017-322933" -> "Luật Thuy loi năm 2017"
+    # (bỏ qua phần số hiệu/năm/mã cơ quan ở đầu, lấy các từ chữ theo sau làm
+    # tên luật, và năm ban hành 4 chữ số theo sau tên luật đó).
+    if matched_key_tokens in (("luat",), ("bo", "luat")):
+        idx = 0
+        while idx < len(rest) and (rest[idx].isdigit() or _is_agency_code_token(rest[idx])):
+            idx += 1
+        title_tokens: list = []
+        year = None
+        j = idx
+        while j < len(rest):
+            if rest[j].isdigit() and len(rest[j]) == 4:
+                year = rest[j]
+                break
+            title_tokens.append(rest[j])
+            j += 1
+        title = " ".join(title_tokens)
+        if title:
+            title = title[0].upper() + title[1:]
+        if title and year:
+            return f"{matched_type} {title} năm {year}".strip()
+        if title:
+            return f"{matched_type} {title}".strip()
+        if year:
+            return f"{matched_type} năm {year}".strip()
+        return matched_type
+
     if not rest or not rest[0].isdigit():
         # Trường hợp không có số hiệu ngay sau loại VB, vd:
         # "Luat-cong-nghe-cao-2008-21-2008-QH12" -> "Luật Công nghệ cao 2008"
@@ -364,7 +455,15 @@ def _parse_number_year_agency(matched_type: str, matched_key_tokens, rest: list)
             if title:
                 title = title[0].upper() + title[1:]
             return f"{matched_type} {title} {year}".strip()
-        return ""
+        # Không có số hiệu và cũng không có năm 4 chữ số nào trong phần còn lại
+        # -> vẫn trả về loại VB + toàn bộ phần tiêu đề bằng chữ, thay vì bỏ trắng.
+        # vd "Nghi-dinh-quy-dinh-xu-phat-...-an-ninh-mang"
+        #   -> "Nghị định quy dinh xu phat vi pham hanh chinh trong linh vuc an ninh mang"
+        title = " ".join(rest)
+        if title:
+            title = title[0].upper() + title[1:]
+            return f"{matched_type} {title}".strip()
+        return matched_type
     number = rest[0]
     rest2 = rest[1:]
 
@@ -380,7 +479,7 @@ def _parse_number_year_agency(matched_type: str, matched_key_tokens, rest: list)
         year = rest2[0]
         agency_tokens = []
         for t in rest2[1:]:
-            if sum(1 for c in t if c.isupper()) < 2:
+            if not _is_agency_code_token(t):
                 break
             agency_tokens.append(_fix_agency_token(t))
         if agency_tokens:
@@ -405,7 +504,7 @@ def _parse_number_year_agency(matched_type: str, matched_key_tokens, rest: list)
             agency_tokens = [
                 _fix_agency_token(t)
                 for t in pre_year_tokens[1:]
-                if sum(1 for c in t if c.isupper()) >= 2
+                if _is_agency_code_token(t)
             ]
             if agency_tokens:
                 return f"{matched_type} {number}-{first_code}/{'-'.join(agency_tokens)} năm {year}"
@@ -414,7 +513,7 @@ def _parse_number_year_agency(matched_type: str, matched_key_tokens, rest: list)
         agency_tokens = [
             _fix_agency_token(t)
             for t in pre_year_tokens
-            if sum(1 for c in t if c.isupper()) >= 2
+            if _is_agency_code_token(t)
         ]
         if agency_tokens:
             return f"{matched_type} {number}/{'-'.join(agency_tokens)} năm {year}"
@@ -427,7 +526,7 @@ def _parse_number_year_agency(matched_type: str, matched_key_tokens, rest: list)
     # LOẠI văn bản (giữ nguyên, không đổi thành "HĐ" như mã cơ quan thường thấy).
     agency_tokens = []
     for i, t in enumerate(rest2):
-        if sum(1 for c in t if c.isupper()) < 2:
+        if not _is_agency_code_token(t):
             break
         if i == 0 and matched_key_tokens == ("huong", "dan") and t.upper() == "HD":
             agency_tokens.append(t)
