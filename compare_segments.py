@@ -1,5 +1,5 @@
 """
-So sánh output giữa 2 thư mục processed-contexts (vd: bản cũ vs bản mới sau khi
+So sánh output giữa 2 thư mục processed-contexts-2 và processed-contexts-4 (vd: bản cũ vs bản mới sau khi
 sửa preprocess.py).
 
 Với mỗi file JSON (ghép theo tên file, 1:1), script sẽ:
@@ -7,14 +7,16 @@ Với mỗi file JSON (ghép theo tên file, 1:1), script sẽ:
     root_preamble, ...) trong từng record và tổng theo cả file.
   - So sánh số lượng đó giữa 2 thư mục, in ra phần chênh lệch.
   - Tổng hợp thống kê chung cho toàn bộ dataset (tất cả các file).
+  - Kiểm tra (độc lập, trên toàn bộ file của từng thư mục) xem có record nào
+    thiếu trường 'name', thiếu trường 'label', hoặc 2 trường này bị rỗng.
   - Xuất báo cáo chi tiết ra CSV (tuỳ chọn --csv).
 
 Cách dùng:
     python compare_segments.py DIR_A DIR_B
-    python compare_segments.py /path/processed-contexts /path/processed-contexts-2 --csv report.csv
+    python compare_segments.py /mnt/mmlab2024nas/trantran/processed-contexts-2 /mnt/mmlab2024nas/trantran/processed-contexts-4 --csv report.csv
 
 Mặc định (không truyền tham số) sẽ dùng:
-    processed-contexts  vs  processed-contexts-2
+    processed-contexts-2  vs  processed-contexts-4
 (nằm cùng cấp với script, hoặc sửa DEFAULT_DIR_A / DEFAULT_DIR_B bên dưới).
 """
 
@@ -25,8 +27,8 @@ import sys
 from collections import Counter
 from pathlib import Path
 
-DEFAULT_DIR_A = "processed-contexts"
-DEFAULT_DIR_B = "processed-contexts-2"
+DEFAULT_DIR_A = "processed-contexts-2"
+DEFAULT_DIR_B = "processed-contexts-4"
 
 # Các segment_type đã biết (chỉ dùng để giữ thứ tự in cho đẹp, script vẫn
 # tự động nhận diện type lạ nếu có).
@@ -100,6 +102,88 @@ def count_segment_types(records: list[dict]) -> Counter:
     return c
 
 
+def _is_empty_value(v) -> bool:
+    """Rỗng = None hoặc string chỉ chứa khoảng trắng (hoặc chuỗi rỗng)."""
+    if v is None:
+        return True
+    if isinstance(v, str) and not v.strip():
+        return True
+    return False
+
+
+def check_missing_name_label(records: list[dict]) -> list[dict]:
+    """Kiểm tra từng record trong 1 file: thiếu trường 'name', thiếu trường
+    'label', hoặc 2 trường này có mặt nhưng rỗng. Trả về danh sách record
+    có vấn đề kèm nhãn vấn đề cụ thể."""
+    issues = []
+    for i, rec in enumerate(records):
+        key = record_key(rec, i)
+        has_name = "name" in rec
+        has_label = "label" in rec
+        name_val = rec.get("name")
+        label_val = rec.get("label")
+
+        problems = []
+        if not has_name:
+            problems.append("missing_name")
+        elif _is_empty_value(name_val):
+            problems.append("empty_name")
+
+        if not has_label:
+            problems.append("missing_label")
+        elif _is_empty_value(label_val):
+            problems.append("empty_label")
+
+        if problems:
+            issues.append({
+                "record_key": key,
+                "problems": problems,
+                "name": name_val,
+                "label": label_val,
+            })
+    return issues
+
+
+def scan_missing_name_label(dir_path: Path, files: dict, dir_label: str) -> list[dict]:
+    """Duyệt toàn bộ file JSON trong 1 thư mục, in báo cáo record thiếu/rỗng
+    'name' hoặc 'label'. Trả về list các dòng để (tuỳ chọn) ghi ra CSV."""
+    rows = []
+    if not files:
+        print(f"\n=== Kiểm tra thiếu/rỗng 'name' / 'label' — {dir_label} ({dir_path}) ===")
+        print("  (không có file nào trong thư mục)")
+        return rows
+
+    print(f"\n=== Kiểm tra thiếu/rỗng 'name' / 'label' — {dir_label} ({dir_path}) ===")
+    total_issue_records = 0
+    files_with_issue = 0
+
+    for name in sorted(files):
+        recs = load_json_records(files[name])
+        issues = check_missing_name_label(recs)
+        if not issues:
+            continue
+        files_with_issue += 1
+        total_issue_records += len(issues)
+        print(f"📄 {name}: {len(issues)}/{len(recs)} record có vấn đề")
+        for it in issues:
+            print(f"    - [{it['record_key']}] {', '.join(it['problems'])}")
+            rows.append({
+                "dir": dir_label,
+                "file": name,
+                "record_key": it["record_key"],
+                "problems": ";".join(it["problems"]),
+                "name_value": it["name"],
+                "label_value": it["label"],
+            })
+
+    if total_issue_records == 0:
+        print("✅ Không có record nào thiếu/rỗng 'name' hoặc 'label'.")
+    else:
+        print(f"➡️  Tổng cộng {total_issue_records} record có vấn đề, trong {files_with_issue}/{len(files)} file.")
+
+    return rows
+
+
 def ordered_types(*counters: Counter) -> list[str]:
     types = set()
     for c in counters:
@@ -131,6 +215,12 @@ def compare(dir_a: Path, dir_b: Path, csv_path: str | None):
     only_a = sorted(set(files_a) - set(files_b))
     only_b = sorted(set(files_b) - set(files_a))
     common = sorted(set(files_a) & set(files_b))
+
+    # Kiểm tra thiếu/rỗng 'name' / 'label' — chạy độc lập trên toàn bộ file
+    # của từng thư mục (không chỉ file trùng tên).
+    missing_field_rows = []
+    missing_field_rows += scan_missing_name_label(dir_a, files_a, "A")
+    missing_field_rows += scan_missing_name_label(dir_b, files_b, "B")
 
     if only_a:
         print(f"⚠️  {len(only_a)} file chỉ có ở {dir_a}: {only_a}")
@@ -248,6 +338,16 @@ def compare(dir_a: Path, dir_b: Path, csv_path: str | None):
             writer.writeheader()
             writer.writerows(type_change_rows)
         print(f"📝 Đã ghi danh sách segment bị đổi loại ra: {changes_csv_path}")
+
+        # File CSV thứ 3: liệt kê record thiếu/rỗng 'name' hoặc 'label' (cả 2 thư mục)
+        missing_csv_path = str(Path(csv_path).with_name(Path(csv_path).stem + "_missing_name_label.csv"))
+        with open(missing_csv_path, "w", newline="", encoding="utf-8") as f:
+            writer = csv.DictWriter(f, fieldnames=[
+                "dir", "file", "record_key", "problems", "name_value", "label_value",
+            ])
+            writer.writeheader()
+            writer.writerows(missing_field_rows)
+        print(f"📝 Đã ghi danh sách record thiếu/rỗng name/label ra: {missing_csv_path}")
 
 
 def main():
